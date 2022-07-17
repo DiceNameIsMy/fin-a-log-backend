@@ -1,5 +1,5 @@
-# proper-DRF-startup
-My vision of proper(but not perfect) Django REST Framework template
+# fin-a-log-backend
+
 
 ## Setup for development
 

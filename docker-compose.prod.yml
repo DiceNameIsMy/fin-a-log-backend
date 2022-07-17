@@ -2,7 +2,7 @@ version: '3'
 
 services:
   api: &api
-    image: proper-drf-startup:latest
+    image: fin-a-log-backend:latest
     build:
       context: .
       dockerfile: compose/prod/Dockerfile

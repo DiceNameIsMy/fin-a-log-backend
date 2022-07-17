@@ -134,7 +134,7 @@ CELERY_RESULT_SERIALIZER = "json"
 
 # API docs
 SPECTACULAR_SETTINGS = {
-    "TITLE": "proper-DRF-startup",
+    "TITLE": "fin-a-log-backend",
     "DESCRIPTION": "My vision of proper(but not perfect) Django REST Framework application",
     "VERSION": "0.1.0",
     "LICENSE": {"name": "MIT"},
