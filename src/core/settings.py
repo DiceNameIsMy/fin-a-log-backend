@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     "django_prometheus",
     # Local apps
     "users",
+    "accounts",
 ]
 
 MIDDLEWARE = [
