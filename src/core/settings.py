@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "django_prometheus",
     # Local apps
-    "accounts",
+    "users",
 ]
 
 MIDDLEWARE = [
@@ -89,7 +89,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
-AUTH_USER_MODEL = "accounts.User"
+AUTH_USER_MODEL = "users.User"
 
 LANGUAGE_CODE = "en-us"
 
@@ -111,7 +111,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",),
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination",
     "PAGE_SIZE": 100,
-    "UNAUTHENTICATED_USER": "accounts.models.AnonymousUser",
+    "UNAUTHENTICATED_USER": "users.models.AnonymousUser",
     # uncomment this line to include exception code in error message
     # "EXCEPTION_HANDLER": "core.exception_handler.exception_handler",
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
@@ -138,6 +138,6 @@ SPECTACULAR_SETTINGS = {
     "DESCRIPTION": "My vision of proper(but not perfect) Django REST Framework application",
     "VERSION": "0.1.0",
     "LICENSE": {"name": "MIT"},
-    "OAUTH2_TOKEN_URL": "/accounts/token/",
-    "OAUTH2_REFRESH_URL": "/accounts/token/refresh/",
+    "OAUTH2_TOKEN_URL": "/login/",
+    "OAUTH2_REFRESH_URL": "/token/refresh/",
 }

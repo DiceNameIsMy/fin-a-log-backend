@@ -6,7 +6,7 @@ from django.urls import reverse
 from rest_framework.test import APIClient
 from rest_framework.response import Response
 
-from accounts.models import User
+from users.models import User
 
 
 PROFILE_URL = reverse("profile")

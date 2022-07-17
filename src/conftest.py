@@ -5,7 +5,7 @@ import pytest
 from rest_framework.test import APIClient
 from rest_framework_simplejwt.tokens import AccessToken
 
-from accounts.models import User
+from users.models import User
 
 
 @pytest.fixture
